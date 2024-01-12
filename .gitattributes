@@ -19,3 +19,31 @@ double absoluteValue(double operand);
 double logarithm(double operand);
 double naturalLogarithm(double operand);
 double customBaseLogarithm(double operand, double base);
+int main() {
+    char choice;
+    double a, b, result;
+
+    do {
+        printf("\nScientific Calculator Menu:\n");
+        printf("A. Basic Operations\n");
+        printf("B. Trigonometric Operations\n");
+        printf("C. Algebraic Operations\n");
+        printf("D. Logarithmic Operations\n");
+        printf("E. Quit\n");
+
+        printf("Enter your choice (A, B, C, D, E): ");
+        scanf(" %c", &choice);
+
+        switch (choice) {
+            case 'A':
+                printf("Enter two numbers: ");
+                scanf("%lf %lf", &a, &b);
+
+                printf("Choose operation:\n");
+                printf("   1. Addition\n");
+                printf("   2. Subtraction\n");
+                printf("   3. Multiplication\n");
+                printf("   4. Division\n");
+                printf("Enter your choice (1, 2, 3, 4): ");
+                int operationChoiceA;
+                scanf("%d", &operationChoiceA);
