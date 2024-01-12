@@ -160,3 +160,33 @@ case 'C':
                     default:
                         printf("Invalid algebraic operation.\n");
                 }
+case 'D':
+                printf("Enter a number: ");
+                scanf("%lf", &a);
+                printf("Choose logarithmic operation:\n");
+                printf("   17. Logarithm (base 10)\n");
+                printf("   18. Natural logarithm (base e)\n");
+                printf("   19. Custom base logarithm\n");
+                printf("Enter your choice (17, 18, 19): ");
+                int operationChoiceD;
+                scanf("%d", &operationChoiceD);
+
+                switch (operationChoiceD) {
+                    case 17:
+                        result = logarithm(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 18:
+                        result = naturalLogarithm(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 19:
+                        printf("Enter the number and the base: ");
+                        scanf("%lf %lf", &a, &b);
+                        result = customBaseLogarithm(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    default:
+                        printf("Invalid logarithmic operation.\n");
+                }
+                break;
