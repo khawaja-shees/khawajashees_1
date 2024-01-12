@@ -1,2 +1,21 @@
 #include <stdio.h>
 #include <math.h>
+double add(double a, double b);
+double subtract(double a, double b);
+double multiply(double a, double b);
+double divide(double a, double b);
+double sine(double angle);
+double cosine(double angle);
+double tangent(double angle);
+double arcsine(double value);
+double arccosine(double value);
+double arctangent(double value);
+double exponentiation(double base, double exponent);
+double squareRoot(double operand);
+double cubeRoot(double operand);
+double nthRoot(double operand, double n);
+double factorial(double n);
+double absoluteValue(double operand);
+double logarithm(double operand);
+double naturalLogarithm(double operand);
+double customBaseLogarithm(double operand, double base);
