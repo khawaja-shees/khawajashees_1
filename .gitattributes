@@ -190,3 +190,15 @@ case 'D':
                         printf("Invalid logarithmic operation.\n");
                 }
                 break;
+case 'E':
+                printf("Exiting the calculator.\n");
+                break;
+
+            default:
+                printf("Invalid choice. Please enter a valid option.\n");
+        }
+
+    } while (choice != 'E');
+
+    return 0;
+}
