@@ -116,3 +116,47 @@ switch (operationChoiceA) {
                         printf("Invalid trigonometric operation.\n");
                 }
                 break;
+case 'C':
+                printf("Enter two numbers: ");
+                scanf("%lf %lf", &a, &b);
+                printf("Choose algebraic operation:\n");
+                printf("   11. Exponentiation\n");
+                printf("   12. Square root\n");
+                printf("   13. Cube root\n");
+                printf("   14. nth root\n");
+                printf("   15. Factorial\n");
+                printf("   16. Absolute value\n");
+                printf("Enter your choice (11, 12, 13, 14, 15, 16): ");
+                int operationChoiceC;
+                scanf("%d", &operationChoiceC);
+
+                switch (operationChoiceC) {
+                    case 11:
+                        result = exponentiation(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 12:
+                        result = squareRoot(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 13:
+                        result = cubeRoot(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 14:
+                        printf("Enter the value and the root (nth): ");
+                        scanf("%lf %lf", &a, &b);
+                        result = nthRoot(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 15:
+                        result = factorial(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 16:
+                        result = absoluteValue(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    default:
+                        printf("Invalid algebraic operation.\n");
+                }
