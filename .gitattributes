@@ -47,3 +47,72 @@ int main() {
                 printf("Enter your choice (1, 2, 3, 4): ");
                 int operationChoiceA;
                 scanf("%d", &operationChoiceA);
+switch (operationChoiceA) {
+                    case 1:
+                        result = add(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 2:
+                        result = subtract(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 3:
+                        result = multiply(a, b);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 4:
+                        result = divide(a, b);
+                        if (b != 0) {
+                            printf("Result: %lf\n", result);
+                        } else {
+                            printf("Error: Division by zero!\n");
+                        }
+                        break;
+                    default:
+                        printf("Invalid operation choice.\n");
+                }
+                break;
+
+            case 'B':
+                printf("Enter an angle in radians: ");
+                scanf("%lf", &a);
+                printf("Choose trigonometric operation:\n");
+                printf("   5. Sine\n");
+                printf("   6. Cosine\n");
+                printf("   7. Tangent\n");
+                printf("   8. Arcsine\n");
+                printf("   9. Arccosine\n");
+                printf("   10. Arctangent\n");
+                printf("Enter your choice (5, 6, 7, 8, 9, 10): ");
+                int operationChoiceB;
+                scanf("%d", &operationChoiceB);
+
+                switch (operationChoiceB) {
+                    case 5:
+                        result = sine(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 6:
+                        result = cosine(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 7:
+                        result = tangent(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 8:
+                        result = arcsine(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 9:
+                        result = arccosine(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    case 10:
+                        result = arctangent(a);
+                        printf("Result: %lf\n", result);
+                        break;
+                    default:
+                        printf("Invalid trigonometric operation.\n");
+                }
+                break;
